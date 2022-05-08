@@ -1,5 +1,14 @@
 import java.util.Arrays;
 
+/**
+ * 
+ * @author Tam Doan
+ * 
+ * ArrayList class implementation of ArrayList without using the java import.
+ *
+ * @param <T>
+ */
+
 public class ArrayList<T> implements List<T> {
 
 	private static final int DEFAULT_INITIAL_CAPACITY = 11;
