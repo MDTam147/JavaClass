@@ -1,7 +1,13 @@
 
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 
+/**
+ * 
+ * @author Tam Doan
+ * Linked List class implementation without using java import for HW4
+ *
+ * @param <T>
+ */
 
 
 public class LinkedList<T> implements List<T> {
