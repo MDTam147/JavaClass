@@ -1,0 +1,57 @@
+<button (click)="getSomeData()">Test GET Request</button>
+<ul>
+  <li *ngFor="let myData of namesArray">
+    {{ myData.first }} {{ myData.last }}
+  </li>
+</ul>
+<h2>Passing Inputs From Parent & Child</h2>
+<h3>Please enter the customer information:</h3>
+<child [callParent]="parentFuncRef" [city]="city"></child>
+{{ dataFromChild }}
+<h2>Events</h2>
+<h3>Mouse Enter/Leave</h3>
+<h3>Welcome to {{ title }}!</h3>
+<input type="submit" value="my button" (mouseenter)="myMouseEnter()" />
+<div
+  ng-mouseleave="count = count+1"
+  ng-init="count=0"
+  (mouseleave)="myMouseLeave()"
+>
+  Mouse over me! (and mouse away from me...)
+</div>
+<h3>Key Down/Up</h3>
+<p>down</p>
+<input type="text" (keydown)="myKeyDown($event)" />
+<p>up</p>
+<input type="text" (keyup)="myKeyUp($event)" />
+<h2>Focus & Blur</h2>
+<input
+  type="text"
+  (focus)="myFocusEvent('gainedFocus')"
+  (blur)="myFocusEvent('lostFocus')"
+/>
+<h2>Copy/Cut & Paste</h2>
+<p>Cut from here:</p>
+<input
+  type="text"
+  [(ngModel)]="cutContent"
+  (cut)="cutEvent(cutContent)"
+/><br />
+<p>Paste in here:</p>
+<input type="text" [(ngModel)]="myPastedContent" (paste)="pasteContent()" />
+<h2>Mouse Up/Down</h2>
+<div
+  (mousedown)="myMouseHandler($event, 'mouse down')"
+  (mouseup)="myMouseHandler($event, 'mouse up')"
+  (mousemove)="myMouseMove($event)"
+>
+  This area has <br />
+  mouse-down<br />
+  and<br />
+  mouse-up<br />
+  enabled.
+</div>
+<h2>Highlight directive</h2>
+<p [myHighlight]>Hightlight me!</p>
+<p [myHighlight]="'violet'">Highlight me too!</p>
+<p [myHighlight]="'green'">Third highlight me too!</p>
