@@ -1,0 +1,36 @@
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Arial;
+	text-align: center;
+}
+
+.form-center{
+	text-align:center;
+}
+
+.form-things{
+	padding:20px;
+	margin:10px;
+}
+
+input{
+	margin:5px;
+}
+
+button{
+	margin:5px;
+}
+.story{
+	padding-right:200px;
+	padding-left:200px;
+}
+
+#storyTitle{
+	text-align: center;
+	font-size: 25px;
+}
+
+#storyContent{
+	text-align:center;
+}

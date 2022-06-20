@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>HW8</title>
+		<link rel="stylesheet" href="assign8.css">
+		<script type="text/javascript" src="./assign8.js"></script>
+	</head>
+	<body>
+	<main>
+		<h1>Madlibs Game</h1>
+		<div class="form-center">
+			<form class ="form-things">
+				<label>Name:</label>
+				<input type="text" value="Maria" id = "input-name"/>
+				</br>
+				<label>Object:</label>
+				<input type="text" value="apple" id = "input-object"/>
+				</br>
+				<label>Adjective:</label>
+				<input type="text" value="happy" id = "input-adjective"/>
+				</br>
+				<label>Verb:</label>
+				<input type="text" value="eat" id = "input-verb"/>
+				</br>
+				
+				<button type = "button" id="button" onclick = "getValues()">Tell story!</button>
+				
+			</form>
+		</div>
+		</br>
+		<div class="story-center">
+		<div class="story">
+			<div id = "storyTitle">Your story has not been created yet.</div>
+			<div id= "storyContent"></div>
+		</div>
+		</div>
+	</main>
+
+	</body>
+</html>
